@@ -28,3 +28,20 @@ Before uploading, make sure you have the following installed in your Arduino IDE
    ```cpp
    const char* ssid       = "YOUR_WIFI_SSID";
    const char* password   = "YOUR_WIFI_PASSWORD";
+
+Adjust your timezone offset if needed (the default is gmtOffset_sec = -18000 for EST).
+
+Select the M5Dial board in the Arduino Tools menu.
+
+Compile and upload!
+
+Usage
+View Clock: Displays 12-hour time, AM/PM, Date, Wi-Fi status, and active alarm status.
+
+Open Menu: Spin the dial exactly 1 tick in either direction to open the main menu.
+
+Navigate: Spin the dial to cycle through options (requires 2 physical "clicks" per menu jump to prevent accidental skipping).
+
+Select: Press the screen (BtnA) to select a menu option or save a setting.
+
+Dismiss Alarm: When the alarm rings, press the screen to turn it off.
